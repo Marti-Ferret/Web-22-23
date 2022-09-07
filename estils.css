@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body,html{
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+
+
+}
+
+
+
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.esquerra{
+    width:50vh;
+    height:100vh;
+    background-color:#00bfff;
+    border-radius: 70% 30% 100% 0% / 0% 55% 45% 100% ;
+    animation: morphingEsquerra 10s infinite;
+
+
+      
+}
+
+.dreta{
+    text-align:right;
+    width:50vh;
+    height:100vh;
+    background-color:#00bfff;
+    border-radius: 59% 65% 43% 96% / 100% 0% 0% 43%;
+    animation: morphingDreta 10s infinite;
+}
+
+@keyframes morphingEsquerra {
+    0% {
+        border-radius: 0% 90% 100% 0%  / 100% 100% 100% 100%  ;
+    }
+    25% {
+        border-radius: 0% 40% 60% 0%  / 100% 100% 100% 100%  ;
+    }
+    50% {
+        border-radius: 0% 0% 0% 0%  / 100% 100% 100% 100% ;
+    }
+    75% {
+        border-radius: 0% 40% 60% 0%  / 100% 100% 100% 100%  ;
+    }
+    100% {
+        border-radius: 0% 90% 100% 0%  / 100% 100% 100% 100% ;
+    }
+}
+
+@keyframes morphingDreta{
+    0% {
+        border-radius: 90% 0% 0% 100%  / 100% 100% 100% 100%  ;
+    }
+    25% {
+        border-radius: 40% 0% 0% 60% / 100% 100% 100% 100% ;
+    }
+    50% {
+        border-radius: 0% 0% 0% 0% / 100% 100% 100% 100% ;
+    }
+    75% {
+        border-radius: 40% 0% 0% 60% / 100% 100% 100% 100% ;
+    }
+    100% {
+        border-radius: 90% 0% 0% 100% / 100% 100% 100% 100%  ;
+    }
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.avatar img{
+    width: 350px;
+    height: 350px;
+}
+
+.info h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.info svg{
+    transform: rotate(-45deg);
+    width: 100px;
+    margin-bottom: -70px;
+
+}
+
+.baixar-1{
+    animation: amagar-1 3s infinite;
+
+}
+.baixar-2{
+    animation: amagar-2 3s infinite;
+
+}
+
+
+@keyframes amagar-1 {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    50% { opacity: 1; }
+    75% { opacity: 1; }
+}
+
+@keyframes amagar-2 {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 1; }
+}
+
+
+#main a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;
+}
