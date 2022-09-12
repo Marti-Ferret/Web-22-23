@@ -5,6 +5,12 @@ body,html{
     scroll-behavior: smooth;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -12,16 +18,12 @@ body,html{
 }
 
 section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     min-height: 100vh;
     width: 100%;
-
-
+    display: flex;
+    flex-direction: column;
 }
-
-
 
 
 #main{
@@ -36,8 +38,6 @@ section{
     background-color:#00bfff;
     border-radius: 70% 30% 100% 0% / 0% 55% 45% 100% ;
     animation: morphingEsquerra 10s infinite;
-
-
       
 }
 
@@ -140,4 +140,63 @@ section{
     flex-direction: column;
     position: absolute;
     bottom: 70px;
+}
+
+
+.titol{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    background-color: #00bfff;
+    padding: 50px;
+    border-radius: 0% 0% 50% 50%;
+}
+
+.titol h2{
+    color: white;
+    margin-bottom: 25px;
+}
+.titol p{
+    color: white;
+    font-size: 25px;
+    
+}
+
+.estudis{
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.informacioPersonal h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.informacioPersonal p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.informacioPersonal svg{
+    width: 200px;
+}
+
+.informacioPersonal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.treball{
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+}
+
+.footer{
+    background-color: #00bfff;
+    height: 100px;
+    margin-top: auto;
+
 }
